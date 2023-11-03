@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #e5e0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left {
+  position: relative;
+  background: #7286d3;
+  padding: 40px;
+}
+
+.profiletext {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profiletext .image {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profiletext .image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profiletext h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.profiletext h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contactinformation {
+  padding-top: 40px;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contactinformation ul {
+  position: relative;
+}
+
+.contactinformation ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contactinformation ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #20204494;
+}
+
+.contactinformation ul li span {
+  color: white;
+  font-weight: 600;
+  font-size: small;
+}
+
+.contactinformation.education li {
+  margin-bottom: 15px;
+}
+
+.contactinformation.education h5 {
+  color: rgba(255, 255, 255, 0.582);
+  font-weight: bold;
+  font-size: large;
+  font-weight: 600;
+}
+
+.contactinformation.education h4:nth-child(2) {
+  color: white;
+  font-weight: 600;
+  font-size: small;
+}
+
+.contactinformation.education h4 {
+  color: white;
+  font-weight: 600;
+  font-size: small;
+}
+.contactinformation.languages h4 {
+  font-size: medium;
+}
+.enggrade h3 {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 600;
+  font-size: small;
+  text-align: inherit;
+}
+
+.container .right {
+  position: relative;
+  background: #8ea7e9;
+  padding: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: #10102294;
+  size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.style{
+  background-color: #6076cc; 
+  padding: 10px;
+}
+p {
+  font-weight: 600;
+  text-align: justify;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .duration {
+  min-width: 150px;
+}
+
+.about .box .duration h5 {
+  text-transform: uppercase;
+  color: #160c3b;
+  font-weight: 600;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #160c3b;
+  font-size: 16px;
+}
+.about .box .text p {
+  font-size: small;
+  text-align: justify;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.skills ul {
+  position: relative;
+}
+.list ul li h4 {
+  font-size: small;
+  text-align: justify;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.skills ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+}
+.skills ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 40px;
+  color: #20204494;
+}
+.skills .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #20204494;
+  display: block;
+  margin-top: 5px;
+}
+
+.skills .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #20204494;
+}
+
+.hobbies ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hobbies ul li {
+  list-style: none;
+  color: #fff;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.hobbies ul li .fa-solid {
+  color: #6a79a0;
+  font-size: 20px;
+  width: 30px;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hobbies ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .duration {
+    margin-bottom: 5px;
+  }
+  .hobbies ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media print {
+  body {
+    background-color: #fff;
+  }
+  .button {
+    display: none;
+  }
+}

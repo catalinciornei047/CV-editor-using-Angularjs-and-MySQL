@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tema Laborator</title>
+  <link rel="icon" type="image/x-icon" href="logo_usv.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="stylecv.css">
+</head>
+
+<body data-ng-app="myApp">
+  <div class="button-container">
+    <a href="../cv/indexcv.html" class="button">Refresh</a>
+    <a href="localhost/cv/form.php" class="button">Edit</a>
+    <a href="#" class="button" onclick="window.print();return false;">Print</a>
+  </div>
+  <div class="container" ng-controller="getLoginData">
+    <div class="left">
+      <div class="profiletext">
+        <div class="image">
+          <img src="f2.jpg">
+        </div>
+        <h2>{{info.firstname}} {{info.lastname}}<br><span>{{info.actualtitle}}</span></h2>
+      </div>
+      <div class="contactinformation">
+        <h3 class="title">Contact info</h3>
+        <ul>
+          <li>
+            <span class="icon"><i class="fa-solid fa-phone"></i></span>
+            <span class="text">{{info.phone}}</span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+            <span class="text">{{info.email}}</span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+            <span class="text">{{info.linkedin}}</span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa-brands fa-github"></i></span>
+            <span class="text">{{info.github}}</span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa-brands fa-discord"></i></span>
+            <span class="text">{{info.discord}}</span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa-solid fa-map"></i></span>
+            <span class="text">{{info.street}}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="contactinformation education">
+        <h3 class="title">Education</h3>
+        <ul>
+          <li>
+            <h5>{{info.d1}}</h5>
+            <h4>{{info.n1}}</h4>
+            <h4>{{info.c1}}</h4>
+          </li>
+          <li>
+            <h5>{{info.d2}}</h5>
+            <h4>{{info.n2}}</h4>
+            <h4>{{info.c2}}</h4>
+          </li>
+          <li>
+            <h5>{{info.d3}}</h5>
+            <h4>{{info.n3}}</h4>
+            <h4>{{info.c3}}</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="contactinformation languages">
+        <h3 class="title">Languages</h3>
+        <ul>
+          <li>
+            <h4>Mother tongue</h4>
+            <span class="text">{{info.romanian}}</span>
+          </li>
+          <li>
+            <h4>Other language</h4>
+            <span class="text">{{info.english}}</span>
+            <div class="enggrade">
+              <ul>
+                <li>
+                  <h3>B1 - WRITING </h3>
+                  <h3>B2 - LISTENING</h3>
+                  <h3>B2 - READING</h3>
+                  <h3>B2 - SPOKEN PRODUCTION</h3>
+                  <h3>B2 - SPOKEN INTERACTION</h3>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <div class="about">
+        <h2 class="title2">Profile</h2>
+        <div class="style">
+          <p>{{info.aboutme}}</p>
+        </div>
+      </div>
+      <div class="about">
+        <h2 class="title2">Work experience</h2>
+        <div class="box">
+          <div class="duration">
+            <h5>{{info.d4}}</h5>
+            <h5>{{info.c4}}</h5>
+          </div>
+          <div class="text">
+            <h4>{{info.title1}}</h4>
+            <p>{{info.text1}}</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="duration">
+            <h5>{{info.d5}}</h5>
+            <h5>{{info.c5}}</h5>
+          </div>
+          <div class="text">
+            <h4>{{info.title2}}</h4>
+            <p>{{info.text2}}</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="duration">
+            <h5>{{info.d6}}</h5>
+            <h5>{{info.c6}}</h5>
+          </div>
+          <div class="text">
+            <h4>{{info.title3}}</h4>
+            <p>{{info.text3}}</p>
+          </div>
+        </div>
+        <div class="about skills">
+          <h2 class="title2">Professional skills</h2>
+          <ul>
+            <li>
+              <span class="icon"><i class="fa-brands fa-js"></i></span>
+              <div class="list">
+                <ul>
+                  <li>
+                    <h4>{{info.java}}</h4>
+                    <h4>{{info.java1}}</h4>
+                    <h4>{{info.java2}}</h4>
+                  </li>
+                </ul>
+              </div>
+              <span class="percent">
+                <div style="width: 65%;"></div>
+              </span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa-brands fa-html5"></i></span>
+              <div class="list">
+                <ul>
+                  <li>
+                    <h4>{{info.html}}</h4>
+                    <h4>{{info.html1}}</h4>
+                    <h4>{{info.html2}}</h4>
+                  </li>
+                </ul>
+                <span class="percent">
+                  <div style="width: 90%;"></div>
+                </span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa-brands fa-css3-alt"></i></span>
+              <div class="list">
+                <ul>
+                  <li>
+                    <h4>{{info.css}}</h4>
+                    <h4>{{info.css1}}</h4>
+                    <h4>{{info.css2}}</h4>
+                  </li>
+                </ul>
+                <span class="percent">
+                  <div style="width: 85%;"></div>
+                </span>
+            </li>
+        </div>
+
+        <div class="about hobbies">
+          <h2 class="title2">Hobbies</h2>
+          <ul>
+            <li><i class="fa-solid fa-mountain-sun"></i>{{info.hobbie2}}</li>
+            <li><i class="fa-solid fa-dumbbell"></i>{{info.hobbie3}}</li>
+            <li><i class="fa-solid fa-person-biking"></i>{{info.hobbie4}}</li>
+            <li><i class="fa-solid fa-gamepad"></i>{{info.hobbie1}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.js"></script>
+    <script>
+      var app = angular.module("myApp", []);
+      app.controller("getLoginData", function ($scope, $http) {
+        $http
+          .get("http://localhost/cv/bridge.php")
+          .then(function (response) {
+            $scope.info = response.data.records[0];
+
+            console.log($scope.info);
+          });
+      });
+    </script>
+    <script>
+      document.addEventListener("keydown", function (event) {
+        if (event.ctrlKey && event.key === "p") {
+          window.print();
+          event.preventDefault();
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("keydown", function (event) {
+          if (event.key === "F5") {
+            window.refresh();
+              event.preventDefault();
+          }
+      });
+  </script>
+</body>
+
+</html>
